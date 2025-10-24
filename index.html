@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll addict</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #040c44;
+            position: relative;
+            padding-bottom: 40px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            max-height: 40vh;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            border: 2px solid #040c44;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+         /* Updated border style for button to be visible */
+        .button {
+             display: inline-block;
+             margin: 10px;
+             padding: 12px 20px;
+             font-size: 16px;
+             font-weight: bold;
+             color: white;
+             border: 2px solid white;
+             border-radius: 5px;
+             cursor: pointer;
+             text-decoration: none;
+             transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+
+        .button:hover {
+            background-color: #F4F4F4;
+            color: #020824;
+        }
+
+        .button:active {
+            background-color: #F4F4F4;
+            color: white;
+             color: #020824;
+        }
+
+        .abn {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
+
+
+        @media (min-width: 768px) {
+            img {
+                max-width: 60%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .button {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+             .abn {
+                font-size: 12px; /* Smaller font for small screens */
+                bottom: 5px; /* Adjust distance for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="pump.jpg" alt="Company Logo">
+    <a href="https://x.com/pumpforpawgs" class="button">My X</a>
+</html>
